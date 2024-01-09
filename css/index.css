@@ -330,9 +330,9 @@ header {
    
 
     transition: all 0.2s;
-    padding: 5% 5%;
-    min-width: 25rem;
-    max-width: 25rem;
+    padding: 3% 3%;
+    min-width: 20rem;
+    max-width: 20rem;
 }
 .product_container:hover{
    
@@ -363,10 +363,10 @@ header {
     
     
    
-    padding: 0 1.5rem;
+  
     padding-top: 1.5rem;
     
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
     font-family: inherit;
  
@@ -389,7 +389,7 @@ header {
 
 .product_discount{
     display: inline-block;
-    margin-left: 8px;
+   
 }
 
 .p_price{    display: inline-block;
@@ -404,5 +404,5 @@ header {
 }
 .P_disc{
     display: inline-block;
-    margin-left: 8px;
+
 }
