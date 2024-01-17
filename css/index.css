@@ -322,14 +322,16 @@ header {
 .outer_container{
     display: flex;
    flex-wrap: wrap;
+
     justify-content: space-evenly;
     align-items: center; 
 
 }
 .product_container{
-   
+
 background-color: white;
     transition: all 0.2s;
+    margin: 1%;
     padding: 3% 3%;
     min-width: 20rem;
     max-width: 20rem;
