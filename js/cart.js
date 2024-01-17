@@ -11,6 +11,7 @@ function onLoad(){
 console.log(bagItems)
 console.log(bagItemObjects)
 
+
 // function addToBag(itemId){
 //     bagItems.push(itemId)
 //     localStorage.setItem('bagItems', JSON.stringify(bagItems));
@@ -54,6 +55,7 @@ function loadBagItemObjects() {
     }
     
     localStorage.setItem('bagItems', JSON.stringify(bagItems));
+    alert("want to remove item");
     loadBagItemObjects();
     // displayBagIcon();
     displayBagItems();
@@ -139,6 +141,22 @@ if (totalPrice<500){
 }
 else{
     dilivaryCharge=0;
+}
+
+if (bagItemObjects.length==0){
+    totalPrice=0
+    totalDiscount=0
+    dilivaryCharge=0
+    paking=0
+    totalDiscountprice=0
+    yousave=0
+
+
+    alert("cart is empty");
+    const btn=document.querySelector(".order_containt")
+    btn.style.display="none"
+
+
 }
 totalDiscountprice=dilivaryCharge+sprice+paking;
 yousave=totalDiscount+dilivaryCharge;

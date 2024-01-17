@@ -328,7 +328,7 @@ header {
 }
 .product_container{
    
-
+background-color: white;
     transition: all 0.2s;
     padding: 3% 3%;
     min-width: 20rem;
@@ -399,10 +399,10 @@ header {
 }
 .p_opreice{
     text-decoration: line-through;
-    font-size: 14px;
+    font-size: 13px;
     color: #878787;
 }
 .P_disc{
     display: inline-block;
-
+    font-size: 17px;
 }
