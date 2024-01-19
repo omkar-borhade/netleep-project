@@ -1,27 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <title>Myntra Functional Clone</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+//     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+// <link rel="stylesheet" href="../css/navbar&footer.css"> -->
+// <!-- 
+// <script src="../data/data.js" defer></script>
+// <script src="../js/index.js" defer></script> -->
+// <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> use laler -->
+// <!-- </head>
+// <body> -->
+//     <!-- hader -->
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script src="../data/data.js" defer></script>
-    <!-- <script src="../js/probductinfo.js" defer></script> -->
-    <script src="../js/cart.js" defer></script>
-    <!-- <script src="../js/index.js" defer></script> -->
-    <link rel="stylesheet" href="../css/cart.css">
-</head>
+class SpacialHeader extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=`
 
-<body>
-    <div class="cotainer_body">
-        <!-- hader -->
+
         <div class="container header">
             <ul class="navbar">
+                <div class="back-button" onclick="goBack()">Back</div>  
                 <li class="logo_container">
                     <a href="../html/index.html"><span class="emart_logo">Emart</span></span><sup><img
                                 class="emart_logo_star" src="../image/emart_logo.png" alt="Myntra Home"></sup></a>
@@ -32,11 +33,33 @@
                     <input class="search_input" placeholder="Search for products, brands and more">
                 </li>
 
-                <li class="action_bar">
-                    <a class="action_container" href="../html/demologin.html">
-                        <span class="material-symbols-outlined action_icon">person</span>
+                <div class="action_bar" id="container" id="profiles"> 
+                    <div class="action_container profile-container">  
+                    
+                        <span  class="material-symbols-outlined action_icon">person</span>
                         <span class="action_name">Profile</span>
-                    </a>
+            
+            
+                        <div class="dropdown-menu" id="dropdown-menu">
+                            <ul>
+                              <li><a href="#">Profile</a></li>
+                              <li><a href="../html/demologin.html ">Login/sign</a></li>
+                            </ul>
+                          </div>
+            
+            
+            
+            
+                
+                        
+                    
+                </div>
+                   <div class="action_container">
+              <span class="material-symbols-outlined action_icon">favorite</span>
+              <span class="action_name">Wishlist</span>
+      
+             
+          </div>
 
                     <a class="action_container" href="../html/cart.html">
                         <span class="material-symbols-outlined action_icon">shopping_bag</span>
@@ -49,68 +72,33 @@
 
             </ul>
         </div>
+        
 
-
-
-
-        <!-- <div class="container aside">aside</div> -->
-        <div class="container main">
-            <div class="cantaint">
-                <div class="main_item_conatint">
-                    <div class="addres_containt">
-                        <div class="data">
-                            <div class="name">
-                                omkar borhade
-                            </div>
-                            <div class="addres">behind siddivinayak hospital sinner</div>
-                        </div>
-                        <div class="btn">
-                            <button type="button">change</button>
-                        </div>
-                    </div>
-                    <div class="cart_contanit">
-            <!-- code on javascript -->
-
-
-            
-        </div>
-        <div class="order_containt">
-            <a href="../html/chekoutproduct.html"><button type="button" >place order</button></a>
-        </div>
-    </div>
-    <div class="price_cantaint">
        
+        
+     
+        
+        
+        
+        `
 
-    </div>
-
-
-
-
-
-
-
-</div>
-            
+    }
+}
 
 
-            </div>
 
 
+customElements.define('spacial-header',SpacialHeader)
 
 
 
 
 
 
-
-
-
-
-
-
-
-            <!-- footor -->
-            <!-- <div class="container footer">
+class SpacialFooter extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=`
+        <div class="container footer">
         <div class="footer_container">
             <div class="footer_column">
                 <h3>ABOUT</h3>
@@ -152,8 +140,15 @@
             © 2023 www.emart.com. All rights reserved.
         </div>
         <hr>
-</div> -->
+</div>
 
-</body>
+        
+        `
 
-</html>
+    }
+}
+
+
+
+
+customElements.define('spacial-footer',SpacialFooter)
