@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <a href="index2.html">signup</a>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- <script src="../data/data.js" defer></script> -->
+   
+    <!-- <link rel="stylesheet" href="../css/demo.login.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <!-- <script src="script2.js" defer></script> -->
+</head>
+
+<body>
+    <div class="cotainer_body">
+        <!-- hader -->
+        <div class="container header">
+            <ul class="navbar">
+                <li class="logo_container">
+                    <a href="./home.html"><span class="emart_logo">Emart</span></span><sup><img
+                                class="emart_logo_star" src="./image/emart_logo.png" alt="Myntra Home"></sup></a>
+                </li>
+
+                <li class="search_bar">
+                    <span class="material-symbols-outlined search_icon">search</span>
+                    <input class="search_input" placeholder="Search for products, brands and more">
+                </li>
+
+                <li class="action_bar">
+                    <a class="action_container" href="./demologin.html">
+                        <span class="material-symbols-outlined action_icon">person</span>
+                        <span class="action_name">Profile</span>
+                    </a>
+
+                    <a class="action_container" href="./cart.html">
+                        <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                        <span class="action_name">Bag</span>
+                        
+                        <span class="bag_item_count">0</span>
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+
+
+            <!-- <div class="container main"> -->
+                <div class="cotn_principal main">
+                    <img  class="bgimg" src="./image/login bg.jpg" alt="">
+                    <div class="cont_centrar">
+                        
+                      <div class="cont_login">
+                    <div class="cont_info_log_sign_up">
+                          <div class="col_md_login">
+                    <div class="cont_ba_opcitiy">
+                            
+                            
+                      
+                      <button class="btn_login" onclick="change_to_login()">LOGIN</button>
+                      </div>
+                      </div>
+                    <div class="col_md_sign_up">
+                    <div class="cont_ba_opcitiy">
+                     
+                    
+                      
+                    
+                      <button class="btn_sign_up" onclick="change_to_sign_up()">SIGN UP</button>
+                    </div>
+                      </div>
+                           </div>
+                    
+                        
+                        <div class="cont_back_info">
+                           <div class="cont_img_back_grey">
+                            
+                           </div>
+                           
+                        </div>
+                    <div class="cont_forms" >
+                        <!-- <div class="cont_img_back_">
+                           <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+                           </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           <form id="login-form">
+                     <div class="cont_form_login">
+                       
+                    <a href="#" onclick="hidden_login_and_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+                       <h2>LOGIN</h2>
+                       
+                       <input type="text" id="lusername" name="lusername" required>
+                       <input type="password" id="lpassword" name="lpassword" required>
+                    <button class="btn_login" type="submit" onclick="change_to_login()">LOGIN</button>
+                </form>
+                <p id="lmessage"></p>
+                      </div>
+                      
+
+                    
+
+
+
+
+
+
+
+
+                      <form id="registration-form">
+                       <div class="cont_form_sign_up">
+                        
+                    <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                         <h2>SIGN UP</h2>
+                        
+                    <!-- <input type="text" placeholder="Email" /> -->
+                    <input type="text" id="rusername" name="rusername" required>
+                    <input type="password" id="rpassword" name="rpassword" required>
+                    <!-- <input type="password" placeholder="Confirm Password" /> -->
+                    <button class="btn_sign_up" type="submit" onclick="change_to_login()">SIGN UP</button>
+                </form>
+                <p id="rmessage"></p>
+
+
+
+
+                
+
+
+
+
+
+
+
+                      </div>
+                    
+                        </div>
+                        
+                      </div>
+                     </div>
+                    </div>
+              <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+            <!-- footor -->
+            <!-- <div class="container footer">
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ABOUT</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Corparate Information</a>
+                <a href="#">Emart stories</a>
+                <a href="#">Twitter</a>
+                <a href="#">facebook</a>
+                <a href="#">Youtube</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>HELP</h3>
+
+                <a href="#">Payment</a>
+                <a href="#">Shipping</a>
+                <a href="#">cancellation & returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Report infringement</a>
+
+            </div>
+
+            <div class="footer_column">
+                <h3>COUSUMER POLICY</h3>
+
+                <a href="#">terms & conditions</a>
+                <a href="#">security</a>
+                <a href="#">privacy</a>
+                <a href="#">graviance Redressal</a>
+                <a href="#">Help Center</a>
+                <a href="#">Become Seller</a>
+                <a href="#">seller condition</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2023 www.emart.com. All rights reserved.
+        </div>
+        <hr>
+</div> -->
+<!-- <script src="../js/demologin.js"></script> -->
+
+</body>
+
+</html>
