@@ -198,8 +198,7 @@ $(".price_cantaint").html(`<table class="table_style">
               if (data.success) {
                 messageElement.style.color = 'green';
                 
-                // Redirect to the home page after a successful login
-                // window.location.href = '/';
+               
                 window.location.href = './orderplace.html'; // Change '/home' to your actual home page URL
                 // console.log(window.location.href = '/home')
               } else {
@@ -208,8 +207,7 @@ $(".price_cantaint").html(`<table class="table_style">
               messageElement.textContent = data.message;
             })
             .catch(error => console.error('Error:', error));
-          // Redirect to the next page (replace 'nextPage.html' with your actual page URL)
-          // window.location.href = './orderplace.html';
+
         } else {
           // Handle case where form fields are not filled
           alert('Please fill in all required fields.');
@@ -232,141 +230,3 @@ $(".price_cantaint").html(`<table class="table_style">
 
 
 
-
-
-
-// var fullName = document.getElementById('fullName').value;
-// var lastName = document.getElementById('lastName').value;
-// var email = document.getElementById('email').value;
-
-// var address = document.getElementById('address').value;
-
-// var address2 = document.getElementById('address2').value;
-// var state = document.getElementById('state').value;
-// var district = document.getElementById('district').value;
-// var zip = document.getElementById('zip').value;
-// var sameaddress= document.getElementById('same-address').value;
-// var saveinfo= document.getElementById('save-info').value;
-// var sameaddress= document.getElementById('same-address').value;
-// var sameaddress= document.getElementById('same-address').value;
-// var sameaddress= document.getElementById('same-address').value;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // frontend/js/script.js
-// document.addEventListener('DOMContentLoaded', function () {
-//   // Wait for the DOM to be fully loaded before attaching event listeners
-
-//   const form = document.getElementById('myForm');
-
-//   form.addEventListener('submit', function (event) {
-//     event.preventDefault(); // Prevent the default form submission
-
-//     // Call the submitForm function to handle the form submission
-//     submitForm();
-//   });
-// });
-
-
-// // frontend/js/script.js
-// function submitForm() {
-//   const firstName = document.getElementById('firstName').value;
-//   const lastName = document.getElementById('lastName').value;
-//   const email = document.getElementById('email').value;
-//   const address = document.getElementById('address').value;
-//   const address2 = document.getElementById('address2').value;
-//   const country = document.getElementById('state').value; // Assuming the "state" field contains the country
-//   const state = document.getElementById('district').value;
-//   const zip = document.getElementById('zip').value;
-
-//   const sameAddress = document.getElementById('same-address').checked;
-//   const saveInfo = document.getElementById('save-info').checked;
-
-//   // You can retrieve payment method and card details similarly...
-
-//   // Prepare the data to send to the backend
-//   // Prepare the data to send to the backend
-//   const formData = {
-   
-//     firstName,
-//     lastName,
-//     email,
-//     address,
-//     address2,
-//     country,
-//     state,
-//     zip,
-//     sameAddress,
-//     saveInfo,
-//     // Add other form fields as needed
-//   };
-
-
-
-//   fetch('http://localhost:3000/api/auth/get-user')
-//   .then(response => response.json())
-//   .then(data => {
-//     if (data.success) {
-//       const user = data.user;
-//       console.log(user); // Handle user information on the frontend
-//     } else {
-//       console.log('User not logged in');
-//     }
-//   })
-//   .catch(error => console.error('Error getting user:', error));
-
-//   // Make a POST request to your backend API endpoint
-//   fetch('http://localhost:3000/api/auth/submit-billing-address', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(formData),
-//   })
-//     .then(response => response.json())
-//     .then(data => {
-//       console.log(data);
-//       // Handle the response from the backend as needed
-//     })
-//     .catch(error => console.error('Error submitting form:', error));
-// }
-
-
-
-
-
-
-
-
-    // // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//   'use strict'
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   const forms = document.querySelectorAll('.needs-validation')
-
-//   // Loop over them and prevent submission
-//   Array.from(forms).forEach(form => {
-//     form.addEventListener('submit', event => {
-//       if (!form.checkValidity()) {
-//         event.preventDefault()
-//         event.stopPropagation()
-//       }
-
-//       form.classList.add('was-validated')
-//     }, false)
-//   })
-// })()

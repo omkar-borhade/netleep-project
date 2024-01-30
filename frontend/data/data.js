@@ -152,8 +152,8 @@
      pname:"Samsung Galaxy S21 FE 5G with Snapdragon 888(Navy, 128 GB)  (8 GB RAM)",
      subName:"S23",
      rate:{star:4.3,count:121792},
-     price:69999,
-     oprice:32999,
+     oprice:69999,
+     price:32999,
      discount:52
  
  },

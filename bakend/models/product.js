@@ -12,7 +12,7 @@ const productSchema = new mongoose.Schema({
    
    
   });
-  productSchema.index({ username: 1 }, { unique: false });
+  
   
   const ProductModel = mongoose.model('product', productSchema);
   
