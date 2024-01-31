@@ -11,6 +11,9 @@ const productSchema = new mongoose.Schema({
     totaldiscount: { type: mongoose.Schema.Types.Mixed, },
    
    
+  },
+  {
+    timestamps: true 
   });
   
   

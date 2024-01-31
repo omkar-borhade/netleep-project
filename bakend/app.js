@@ -9,6 +9,9 @@ const productRoutes = require('./routes/productRoutes');
 const errorHandlerMiddleware = require('./middleware/errorHandlerMiddleware');
 const { connectMDB } = require('./connection');
 
+
+
+
 const app = express();
 const port = 8005;
 
@@ -27,11 +30,20 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../frontend'), { extensions: ['html', 'htm', 'css', 'js'] }));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Use routes
+
+
 app.use('/', homeRoutes);
 app.use('/', userRoutes);
 app.use('/', productRoutes);
+app.use('/api/products', productRoutes);
+
+
+
 
 // Use the error handling middleware
 app.use(errorHandlerMiddleware);

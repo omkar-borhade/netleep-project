@@ -205,12 +205,7 @@ yousave=totalDiscount+dilivaryCharge;
 
 
 
-
-
-
-
-
-
+   
 
 
 

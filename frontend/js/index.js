@@ -38,7 +38,7 @@ function clk(productId){
     const clickedProduct = items.find(item => item.id === productId);
 
     if (clickedProduct) {
-        window.location.href = `./productinfo.html?id=${clickedProduct.id}`;
+        window.location.href = `./productinfo?id=${clickedProduct.id}`;
 
 }
 

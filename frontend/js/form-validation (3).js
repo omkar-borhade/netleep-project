@@ -197,14 +197,18 @@ $(".price_cantaint").html(`<table class="table_style">
               const messageElement = document.getElementById('lmessage');
               if (data.success) {
                 messageElement.style.color = 'green';
-                
-               
-                window.location.href = './orderplace.html'; // Change '/home' to your actual home page URL
-                // console.log(window.location.href = '/home')
-              } else {
+            
+                if (data.redirect) {
+                    // Redirect to the specified URL
+                    window.location.href = data.redirect;
+                } else {
+                    // Handle success without redirection
+                }
+            } else {
                 messageElement.style.color = 'red';
-              }
-              messageElement.textContent = data.message;
+            }
+            messageElement.textContent = data.message;
+            
             })
             .catch(error => console.error('Error:', error));
 

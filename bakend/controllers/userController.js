@@ -3,6 +3,7 @@ const User = require('../models/user');
 
 const userController = {};
 
+
 userController.loginSignUp = async (req, res) => {
   const { username, password, action } = req.body;
 
@@ -34,5 +35,32 @@ userController.loginSignUp = async (req, res) => {
     res.status(500).json({ success: false, message: 'Internal server error' });
   }
 };
+// ========================================
+
+
+userController.userListController = async (req, res, next) => {
+  try {
+    const param = req.query.param; // Get the 'param' from the query parameters
+
+    if (param) {
+      const userToShow = await User.findOne({ username: param });
+
+      if (userToShow) {
+        // If user found, render the userList page with only that user's data
+        res.render('userList', { users: [userToShow] });
+      } else {
+        // If user not found, render an empty userList
+        res.render('userList', { users: [] });
+      }
+    } else {
+      // If no parameter is provided, render the entire user list
+      const users = await User.find();
+      res.render('userList', { users });
+    }
+  } catch (error) {
+    next(error);
+  }
+};
+
 
 module.exports = userController;

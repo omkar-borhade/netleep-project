@@ -1,18 +1,21 @@
 // productRoutes.js
 const express = require('express');
 const productController = require('../controllers/productController');
+const orderController = require('../controllers/orderController');
 const Product = require('../models/product');
 const router = express.Router();
 
-router.post('/checkout', productController.checkout);
 
-router.get('/productList', async (req, res, next) => {
-    try {
-      const products = await Product.find();
-      res.render('productList', { products });
-    } catch (error) {
-      next(error);
-    }
-  });
+
+router.get('/cart', productController.getCartPage);
+
+
+
+
+// ===============================================
+router.post('/checkout', productController.checkout);
+router.get('/orderplace', orderController.getOrderPlacePage); 
+router.get('/productList', productController.getProductList);
+;
 
 module.exports = router;
