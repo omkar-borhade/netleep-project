@@ -10,6 +10,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get('id');
+console.log(productId ,"ss",urlParams,queryString)
 let itemsArray=[]
 const selectedProduct = items.find(item => item.id === parseInt(productId));
 itemsArray.push(selectedProduct);

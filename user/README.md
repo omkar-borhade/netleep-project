@@ -2,7 +2,8 @@ ecommerce website
  website is  not competed yet
 
  open teminal
- 1.  cd bakend  
+ 1. cd user 
+   cd bakend  
  2. nodemon app.js
  
  3. http://localhost:8005

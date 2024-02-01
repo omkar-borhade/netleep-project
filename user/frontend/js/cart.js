@@ -175,7 +175,7 @@ yousave=totalDiscount+dilivaryCharge;
     </tr>
     <tr>
         <td class="price_dt_name">Discount</td>
-        <td class="price_data green">− ₹${totalDiscount}</td>
+        <td class="price_data green">− ₹${bagItemObjects.length*totalDiscount}</td>
     </tr>
     <tr>
     
