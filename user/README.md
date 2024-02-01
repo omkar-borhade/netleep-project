@@ -1,6 +1,5 @@
 ecommerce website
- website is  not competed yet
-
+steps:>
  open teminal
  1. cd user 
    cd bakend  
@@ -13,4 +12,5 @@ admin page
  http://localhost:8005/userList
 
 
+ 
  
