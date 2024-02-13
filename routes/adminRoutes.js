@@ -27,7 +27,7 @@ route.get("/adminLogin", (req, res) => {
   res.render("admin/login.ejs");
 });
 route.post("/adminLogin", function (req, res, next) {
-  Admin.findOne({ email: req.body.email })
+  Admin.findOne({ username: req.body.username })
     .then((data) => {
       if (data) {
         if (data.password === req.body.password) {

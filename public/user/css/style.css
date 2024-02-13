@@ -170,7 +170,18 @@
 .logo_container {
     margin-left: 4%;
 }
+.admin_container{
+  text-decoration: none;
+  position: absolute;
+  right: 1rem;
+  color: rgb(255, 255, 255);
 
+}
+.admin_container:hover{
+  color: gold;
+  font-weight: 500;
+  scale: 1.05;
+}
 
 .main {
 
